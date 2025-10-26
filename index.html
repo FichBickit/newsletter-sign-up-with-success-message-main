@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=10" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+  <title>Newsletter Signup</title>
+</head>
+
+<body>
+  <main class="content">
+    <picture>
+      <img class="tabletImage" src="./assets/images/illustration-sign-up-tablet.svg" alt="Illustration">
+      <img class="mobileImage" src="./assets/images/illustration-sign-up-mobile.svg" alt="Illustration">
+    </picture>
+    <article class="text">
+      <h1 class="bigHeader">Stay updated!</h1>
+      <h6 class="desc">
+        Join 60,000+ product managers receiving monthly updates on:
+      </h6>
+      <div class="bulletPoints">
+        <div class="bulletPoint1">
+          <img class="bulletPoint1Img" src="./assets/images/icon-list.svg" alt="Bullet Point 1" height="20"
+            weight="20" />
+          <p class="bulletPoint1Text">
+            Product discovery and building what matters
+          </p>
+        </div>
+        <div class="bulletPoint2">
+          <img class="bulletPoint2Img" src="./assets/images/icon-list.svg" alt="Bullet Point 2" height="20"
+            weight="20" />
+          <p class="bulletPoint2Text">
+            Measuring to make sure updates are a success
+          </p>
+        </div>
+        <div class="bulletPoint3">
+          <img class="bulletPoint3Img" src="./assets/images/icon-list.svg" alt="Bullet Point 3" height="20"
+            weight="20" />
+          <p class="bulletPoint3Text">And much more!</p>
+        </div>
+      </div>
+      <form class="emailAndSubmit" novalidate>
+        <article class="emailAddress">
+          <article class="emailTextDiv">
+            <h6 class="emailText">Email address</h6>
+            <label for="email"></label>
+            <span id="errorText"></span>
+          </article>
+          <input type="email" id="email" name="email" placeholder="email@company.com" />
+        </article>
+        <button class="subscribe">Subscribe for monthly newsletter</button>
+      </form>
+    </article>
+    <article class="imageDiv">
+      <img class="image" src="./assets/images/illustration-sign-up-desktop.svg" alt="Illustration" />
+    </article>
+  </main>
+  <section class="successContent">
+    <article class="successText">
+      <img class="successTick" src="./assets/images/icon-success.svg" alt="Success Tick" height="70" weight="70" />
+      <h1 class="successHeader">Thanks for subscribing!</h1>
+      <p class="successParagraph">
+        A confirmation email has been sent to
+        <strong><span class="emailFiller">ash@loremcompany.com</span></strong>. Please open it and click the
+        button inside to confirm your subscription.
+      </p>
+    </article>
+    <section class="returnButtonDiv">
+      <button class="returnButton">Dismiss Message</button>
+    </section>
+</body>
+
+</html>
